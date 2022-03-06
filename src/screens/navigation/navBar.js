@@ -3,30 +3,52 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Image from "react-bootstrap/Image";
 import "./navBar.css";
+import logo_icon from "../../ilustrations/logo_icon.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">Ristic Bojan</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <Link className="navbar-brand" to="/">
+            <Image
+              fluid
+              roundedCircle
+              src={logo_icon}
+              alt="logo_icon"
+              style={{ width: "50px" }}
+            />
+            Bojan Ristic
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
           <Nav>
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#features">About Me</Nav.Link>
-            <Nav.Link href="#pricing">Experience</Nav.Link>
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
+            <Link className="nav-link" to="/AboutMe">
+              About Me
+            </Link>
+            <Link className="nav-link" to="/Experience">
+              Experience
+            </Link>
             <NavDropdown title="Hobbies" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
+              <Link className="dropdown-item" to="/AboutMe">
                 Snowboarding
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              </Link>
+              <Link className="dropdown-item" to="/Flyfishing">
                 Fly Fishing
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Hiking</NavDropdown.Item>
+              </Link>
+              <Link className="dropdown-item" to="/Hiking">
+                Hiking
+              </Link>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

@@ -1,0 +1,17 @@
+.btnExplore{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #8490ff;
+    width: 30%;
+    border: 1px solid #8490ff;
+    border-radius: 8px;
+    font-size: larger;
+    padding: 5px;
+    color:white !important;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+.btnExplore:hover{
+    box-shadow: -1px 4px 15px 5px rgba(132,144,255,0.65);
+    transition: all 0.3s ease 0s;
+}

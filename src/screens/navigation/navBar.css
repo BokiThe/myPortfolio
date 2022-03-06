@@ -2,8 +2,13 @@
 
 .navbar-brand:hover, .nav-link:hover{
     color: #8490ff !important;
+    transition: all 0.3s ease 0s;
 }
 .dropdown-item:hover{
-    color:black !important;
-    background-color: #8490ffab !important;
+    color:white !important;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    transition: all 0.3s ease 0s;
+}
+.navbar-brand{
+    font-size: 36px !important;;
 }
