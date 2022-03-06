@@ -1,0 +1,9 @@
+/* #8490ff !important */
+
+.navbar-brand:hover, .nav-link:hover{
+    color: #8490ff !important;
+}
+.dropdown-item:hover{
+    color:black !important;
+    background-color: #8490ffab !important;
+}
