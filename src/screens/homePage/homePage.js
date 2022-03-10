@@ -2,21 +2,54 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
+import rtanj from "../../ilustrations/rtanj.jpeg";
 import "./homePage.css";
 function homePage() {
   return (
-    <Container fluid>
-      <Row className="my-4 justify-content-around">
-        <Col className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  p-0">
-          <h3>Hi, i'm</h3>
-          <h1>Bojan Ristic</h1>
-          <h4>Junior Frontend Developer</h4>
+    <Container fluid className="p-0 m-0">
+      <Row
+        className=" justify-content-around align-items-center flex-wrap-reverse "
+        style={{ height: "100vh" }}
+      >
+        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 p-0">
+          <h3 className="my-3">Hi, i'm</h3>
+          <h1 className="h1Gradient my-3" style={{ fontSize: "60px" }}>
+            BOJAN RISTIC
+          </h1>
+          <h4>
+            {" "}
+            <strong>Junior Frontend Developer</strong>
+          </h4>
+          <h5 className="my-3">
+            {" "}
+            "<i>No day in which you learn something is completely lost.</i>"
+          </h5>
+          <Link className="btnExplore my-3" to="/AboutMe">
+            Explore more
+          </Link>
+        </Col>
+        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12  p-0 ">
+          <Image fluid rounded src={rtanj} alt="rtanj_mountain" />
+        </Col>
+      </Row>
+      <Row className="  justify-content-around align-items-center">
+        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12  p-0">
+          <Image fluid rounded src={rtanj} alt="rtanj_mountain" />
+        </Col>
+        <Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 justify-content-around textAbout p-0">
+          <h3>About me</h3>
+          <h1 className="h1Gradient">PERSONAL DETAILS</h1>
+
+          <h5>
+            {" "}
+            "<i>No day in which you learn something is completely lost.</i>"
+          </h5>
           <Link className="btnExplore" to="/AboutMe">
             Explore more
           </Link>
         </Col>
-        <Col className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12  p-0 mb-auto"></Col>
       </Row>
     </Container>
   );

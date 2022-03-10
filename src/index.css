@@ -4,6 +4,11 @@
   src: local("Poppins"),
    url("../public/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: local("Poppins"),
+     url("../public/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+    }
 
 *{
   font-family: "Poppins", sans-serif;
@@ -22,4 +27,3 @@ code {
   max-width: 1440px;
   margin: 0 auto;
 }
-  
