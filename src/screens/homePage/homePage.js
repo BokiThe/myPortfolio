@@ -8,13 +8,10 @@ import rtanj from "../../ilustrations/rtanj.jpeg";
 import "./homePage.css";
 function homePage() {
   return (
-    <Container fluid className="p-0" style={{ marginTop: "150px" }}>
+    <Container fluid className="p-0" style={{ position: "relative" }}>
       {/* INTRODUCTION */}
-      <Row
-        className=" justify-content-around align-items-center flex-wrap-reverse "
-        style={{ height: "100vh" }}
-      >
-        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 p-0">
+      <Row className=" justify-content-around align-items-center flex-wrap-reverse mt-xl-5 mt-lg-5 mt-md-5 mt-sm-5 mt-5">
+        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 p-0 ">
           <h3 className="my-3">Hi, i'm</h3>
           <h1 className="h1Gradient my-3" style={{ fontSize: "60px" }}>
             BOJAN RISTIC
@@ -31,7 +28,7 @@ function homePage() {
             Explore more
           </Link>
         </Col>
-        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12  p-0 ">
+        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12  p-0">
           <Image fluid rounded src={rtanj} alt="rtanj_mountain" />
         </Col>
       </Row>
