@@ -17,7 +17,7 @@
 }
 .h1Gradient{
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Poppins-Bold", sans-serif;
 }

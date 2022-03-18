@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
       <Container>
         <Navbar.Brand href="#home">
           <Link className="navbar-brand" to="/">
