@@ -9,6 +9,19 @@ import logo_icon from "../../ilustrations/logo_icon.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+  const navScroll = document.querySelector("nav");
+  console.log(navScroll);
+  const listenScrollEvent = () => {
+    if (window.scrollY > 70) {
+      return navScroll.setAttribute(
+        "style",
+        "box-shadow: -1px 4px 15px 5px rgba(132,144,255,0.65);"
+      );
+    } else if (window.scrollY < 73) {
+      return navScroll.setAttribute("style", "box-shadow: nones;");
+    }
+  };
+  window.addEventListener("scroll", listenScrollEvent);
   return (
     <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
       <Container>
