@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -9,21 +9,24 @@ import logo_icon from "../../ilustrations/logo_icon.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-  const navScroll = document.querySelector("nav");
-  console.log(navScroll);
-  const listenScrollEvent = () => {
-    if (window.scrollY > 70) {
-      return navScroll.setAttribute(
-        "style",
-        "box-shadow: -1px 4px 15px 5px rgba(132,144,255,0.65);"
-      );
-    } else if (window.scrollY < 73) {
-      return navScroll.setAttribute("style", "box-shadow: nones;");
-    }
-  };
-  window.addEventListener("scroll", listenScrollEvent);
+  useEffect(() => {
+    const navScroll = document.querySelector("nav");
+    console.log(navScroll);
+    const listenScrollEvent = () => {
+      if (window.scrollY > 50) {
+        return navScroll.setAttribute(
+          "style",
+          "box-shadow: -1px 4px 15px 5px rgba(132,144,255,0.7);"
+        );
+      } else if (window.scrollY < 53) {
+        return navScroll.setAttribute("style", "box-shadow: none;");
+      }
+    };
+    window.addEventListener("scroll", listenScrollEvent);
+  }, []);
+
   return (
-    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top">
       <Container>
         <Navbar.Brand href="#home">
           <Link className="navbar-brand" to="/">
@@ -53,7 +56,7 @@ function NavBar() {
               Experience
             </Link>
             <NavDropdown title="Hobbies" id="collasible-nav-dropdown">
-              <Link className="dropdown-item" to="/AboutMe">
+              <Link className="dropdown-item" to="/Snowboarding">
                 Snowboarding
               </Link>
               <Link className="dropdown-item" to="/Flyfishing">

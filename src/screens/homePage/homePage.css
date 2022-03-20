@@ -3,7 +3,7 @@
     text-align: center;
     text-decoration: none;
     color: #8490ff;
-    width: 30%;
+    width: 50%;
     border: 1px solid #8490ff;
     border-radius: 8px;
     font-size: larger;
@@ -24,8 +24,17 @@
 .rowMargin{
     margin-bottom: 70px !important;
   }
-  .textAbout{
+.textAbout{
     display: flex;
     flex-direction: column;
     height: 397.4px;
   }
+
+  @media screen and (max-width: 768px) {
+    .btnExplore{
+        margin: 0 auto;
+    }
+  }
+
+
+
