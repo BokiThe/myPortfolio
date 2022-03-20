@@ -4,8 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
-import personal_image from "../../ilustrations/EXPO 0003.jpg";
-import aboutMe_image from "../../ilustrations/EXPO 0002.jpg";
+import personal_image from "../../ilustrations/EXPO_0003.png";
+import aboutMe_image from "../../ilustrations/EXPO_0002.png";
 import "./homePage.css";
 function homePage() {
   return (
@@ -14,7 +14,7 @@ function homePage() {
         className=" justify-content-around align-items-center flex-wrap-reverse mx-4"
         style={{ height: "100vh" }}
       >
-        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 p-0">
+        <Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 p-0">
           <h3 className="my-3">Hi, i'm</h3>
           <h1 className="h1Gradient my-3" style={{ fontSize: "60px" }}>
             BOJAN RISTIC
@@ -31,12 +31,12 @@ function homePage() {
             Explore more
           </Link>
         </Col>
-        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12  p-0  ">
+        <Col className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  p-0 mb-auto ">
           <Image fluid rounded src={personal_image} alt="personal_image" />
         </Col>
       </Row>
       <Row className="  justify-content-around align-items-center">
-        <Col className="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12  p-0">
+        <Col className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  p-0">
           <Image fluid rounded src={aboutMe_image} alt="aboutMe_image" />
         </Col>
         <Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 justify-content-around textAbout p-0">
