@@ -1,7 +1,7 @@
 import NavBar from "./screens/navigation/navBar";
 import HomePage from "./screens/homePage/homePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-function App() {
+const App = () => {
   return (
     <div>
       <BrowserRouter>
@@ -12,6 +12,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

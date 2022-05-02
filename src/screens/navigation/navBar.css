@@ -12,3 +12,13 @@
 .navbar-brand{
     font-size: 36px !important;;
 }
+.navbar-toggler:hover, .navbar-toggler:focus, .navbar-toggler:focus{
+    box-shadow: -1px 4px 15px 5px rgba(132,144,255,0.65) !important;
+}
+
+@media screen and (max-width: 369px) {
+   
+    .navbar-toggler{
+    margin: 0 auto;
+    }
+  }

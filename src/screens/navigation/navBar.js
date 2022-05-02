@@ -8,7 +8,7 @@ import "./navBar.css";
 import logo_icon from "../../ilustrations/logo_icon.png";
 import { Link } from "react-router-dom";
 
-function NavBar() {
+const NavBar = () => {
   useEffect(() => {
     const navScroll = document.querySelector("nav");
     console.log(navScroll);
@@ -71,6 +71,6 @@ function NavBar() {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

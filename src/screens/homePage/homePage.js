@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 import personal_image from "../../ilustrations/EXPO_0003.jpeg";
 import aboutMe_image from "../../ilustrations/EXPO_0002.jpeg";
 import "./homePage.css";
-function homePage() {
+const homePage = () => {
   return (
     <Container fluid className="p-0 m-0">
       {/* Intro */}
-      <Row className=" justify-content-around align-items-center flex-wrap-reverse mx-auto mt-5">
+      <Row className="justify-content-around align-items-center flex-wrap-reverse mx-auto mt-5">
         {/* --- Text --- */}
         <Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 textAbout p-0">
           <h3 className="my-3 ">Hi, i'm</h3>
@@ -37,7 +37,7 @@ function homePage() {
         </Col>
       </Row>
       {/* About me */}
-      <Row className="  justify-content-around align-items-center mx-auto">
+      <Row className="justify-content-around align-items-center mx-auto">
         {/* --- Photo ---- */}
         <Col className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  p-0">
           <Image fluid rounded src={aboutMe_image} alt="aboutMe_image" />
@@ -63,6 +63,6 @@ function homePage() {
       </Row>
     </Container>
   );
-}
+};
 
 export default homePage;
