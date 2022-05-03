@@ -28,18 +28,17 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="light" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">
-          <Link className="navbar-brand" to="/">
-            <Image
-              fluid
-              roundedCircle
-              src={logo_icon}
-              alt="logo_icon"
-              style={{ width: "50px" }}
-            />
-            Bojan Ristic
-          </Link>
-        </Navbar.Brand>
+        <Link className="navbar-brand" to="/">
+          <Image
+            fluid
+            roundedCircle
+            src={logo_icon}
+            alt="logo_icon"
+            style={{ width: "50px" }}
+          />
+          Bojan Ristic
+        </Link>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"

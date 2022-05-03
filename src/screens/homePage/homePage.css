@@ -37,6 +37,9 @@
       align-items: center;
       text-align: center;
     }
+    h5{
+      width: 50%;
+    }
   }
   @media screen and (max-width: 369px) {
    

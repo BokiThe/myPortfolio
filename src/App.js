@@ -1,9 +1,11 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./screens/navigation/navBar";
 import HomePage from "./screens/homePage/homePage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HeroPage from "./screens/heroPage/hero";
 const App = () => {
   return (
     <div>
+      <HeroPage />
       <BrowserRouter>
         <NavBar />
         <Routes>

@@ -1,16 +1,25 @@
-import React from "react";
 import "./hero.css";
 
-const hero = () => {
+const HeroPage = () => {
+  const fadeOut = () => {
+    const dis = document.getElementById("disapear");
+    dis.style.opacity = "0";
+    dis.style.transition = "all 2s";
+    window.setTimeout(function removethis() {
+      dis.style.display = "none";
+    }, 2000);
+  };
   return (
-    <div className="hero__container">
-      <div className="hero__section">
-        <div className="hero__text1">HALLO!</div>
-        <div className="hero__text2">WELCOME TO MY PORTFOLIO PAGE</div>
-        <div className="hero__text3"></div>
+    <div className="heroContainer" id="disapear">
+      <div className="heroSection">
+        <h1 className="heroText">HELLO!</h1>
+        <h1 className="heroText">WELCOME TO MY PORTFOLIO PAGE</h1>
+        <button className="btnExplore " onClick={fadeOut}>
+          HOP UP!
+        </button>
       </div>
     </div>
   );
 };
 
-export default hero;
+export default HeroPage;
