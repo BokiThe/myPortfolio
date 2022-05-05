@@ -21,12 +21,12 @@
 .heroText{
     font-size: 90px;
 }
-.heroText, .heroBtn{
-    animation: fadeIn linear 3s !important;
-    -webkit-animation: fadeIn linear 3s;
-    -moz-animation: fadeIn linear 3s;
-    -o-animation: fadeIn linear 3s;
-    -ms-animation: fadeIn linear 3s;
+.heroText, .heroBtn {
+    animation: fadeIn linear 2s !important;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
     color: aliceblue !important;
 }
 .heroBtn{
