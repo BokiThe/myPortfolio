@@ -4,15 +4,13 @@ import HomePage from "./screens/homePage/homePage";
 import HeroPage from "./screens/heroPage/hero";
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <HeroPage />
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

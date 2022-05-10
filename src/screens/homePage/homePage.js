@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 import personal_image from "../../ilustrations/EXPO_0003.jpeg";
 import aboutMe_image from "../../ilustrations/EXPO_0002.jpeg";
 import "./homePage.css";
-const homePage = () => {
+function homePage() {
   return (
     <Container fluid className="p-0 m-0">
       {/* Intro */}
-      <Row className="justify-content-around align-items-center flex-wrap-reverse mx-auto mt-5">
+      <Row className="introContainer justify-content-around align-items-center flex-wrap-reverse mx-auto px-3">
         {/* --- Text --- */}
         <Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 textAbout p-0">
           <h3 className="my-3 ">Hi, i'm</h3>
@@ -37,16 +37,19 @@ const homePage = () => {
         </Col>
       </Row>
       {/* About me */}
-      <Row className="justify-content-around align-items-center mx-auto">
+      <Row className="aboutContainer justify-content-around align-items-center mx-auto px-3">
         {/* --- Photo ---- */}
         <Col className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  p-0">
           <Image fluid rounded src={aboutMe_image} alt="aboutMe_image" />
         </Col>
         {/* --- Text --- */}
-        <Col className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 justify-content-around textAbout p-0">
-          <h3>About me</h3>
-          <h1 className="h1Gradient">PERSONAL DETAILS</h1>
-          <h5>
+        <Col
+          className=" col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12  textAbout p-0"
+          style={{ textAlign: "right" }}
+        >
+          <h3 className="my-3">About me</h3>
+          <h1 className="h1Gradient my-3">PERSONAL DETAILS</h1>
+          <h5 className="my-3">
             <strong>Personal moto: </strong> <br />
             <br /> "
             <i>
@@ -56,13 +59,13 @@ const homePage = () => {
             "
           </h5>
 
-          <Link className="btnExplore" to="/AboutMe">
+          <Link className="btnExplore align-self-end  my-3" to="/AboutMe">
             Explore more
           </Link>
         </Col>
       </Row>
     </Container>
   );
-};
+}
 
 export default homePage;

@@ -21,13 +21,14 @@
     -webkit-text-fill-color: transparent;
     font-family: "Poppins-Bold", sans-serif;
 }
-.rowMargin{
-    margin-bottom: 70px !important;
-  }
+
+  
 .textAbout{
     display: flex;
     flex-direction: column;
-    height: 397.4px;
+  }
+  .introContainer{
+    margin-top: 90px !important;
   }
 
   @media screen and (max-width: 992px) {
@@ -40,14 +41,13 @@
     h5{
       width: 50%;
     }
-  }
-  @media screen and (max-width: 369px) {
-   
-    .row{
-      margin-top: 200px;
+    .aboutContainer a{
+      align-self: center !important;
     }
-   
   }
+
+
+ 
 
 
 
